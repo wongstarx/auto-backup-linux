@@ -21,6 +21,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Operating System :: POSIX :: Linux",
 ]
+packages = [{include = "auto_backup"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
