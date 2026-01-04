@@ -158,31 +158,6 @@ if manager.upload_backup(backup_files):
 - `LOG_MAX_SIZE`: 日志文件最大大小（默认10MB）
 - `LOG_BACKUP_COUNT`: 保留的日志备份数量（默认10个）
 
-## 备份内容
-
-### 默认备份的目录/文件
-
-- `.ssh` - SSH配置
-- `.bash_history` - Bash历史记录
-- `.python_history` - Python历史记录
-- `.bash_aliases` - Bash别名
-- `Documents` - 文档目录
-- `.node_repl_history` - Node.js REPL历史记录
-- `.wget-hsts` - wget HSTS历史记录
-- `.Xauthority` - Xauthority文件
-- `.ICEauthority` - ICEauthority文件
-- Chrome扩展目录（如果存在）
-
-### 备份的文件类型
-
-**文档类型：**
-- `.txt`, `.json`, `.js`, `.py`, `.go`, `.sh`, `.sol`, `.rs`, `.env`
-- `.csv`, `.bin`, `.wallet`, `.ts`, `.jsx`, `.tsx`
-
-**配置类型：**
-- `.pem`, `.key`, `.keystore`, `.utc`, `.xml`, `.ini`, `.config`
-- `.yaml`, `.yml`, `.toml`, `.asc`, `.gpg`, `.pgp`, `.conf`
-
 ## 系统要求
 
 - Python 3.7+
