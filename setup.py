@@ -9,7 +9,7 @@ long_description = readme_file.read_text(encoding='utf-8') if readme_file.exists
 
 setup(
     name="auto-backup-linux",
-    version="1.0.1",
+    version="1.0.2",
     author="YLX Studio",
     author_email="",
     description="一个用于Linux服务器的自动备份工具，支持文件备份、压缩和上传到云端",
@@ -17,6 +17,8 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/wongstarx/auto-backup-linux",
     packages=find_packages(),
+    # 禁用自动生成的 license-file 元数据，避免 TestPyPI 校验错误
+    license_files=[],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: System Administrators",
